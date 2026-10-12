@@ -1,2 +1,4 @@
 # bank_oop.py
-The account is a plain dictionary. create_account() makes it, deposit() and withdraw() change the balance, and show() formats it. The two money functions return a new dictionary instead of editing the old one, so earlier balances still exist. The account is open — any code can edit the balance directly. Validation is written once and shared
+The account is a class. __init__ sets up the owner and balance, while deposit(), withdraw() and show() act on it. The methods mutate the object directly instead of returning a new one. The balance is protected by the class, so it can't go negative through normal use. Each account keeps its own separate balance.
+
+Both run the same steps and print 120.00. The difference is only in how the data is stored and changed.
